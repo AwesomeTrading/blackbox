@@ -162,7 +162,7 @@ def compute_volume_unit_ball(d: int) -> float:
         float: volume
     """
     if d % 2 == 0:
-        v1 = np.pi ** (d / 2) / np.math.factorial(d / 2)
+        v1 = np.pi ** (d / 2) / np.math.factorial(d // 2)
     else:
         v1 = (
             2
